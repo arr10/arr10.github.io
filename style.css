@@ -4,31 +4,43 @@
 .background{
     padding-top: 1%;
     width: 100%;
+    z-index: 0;
 }
 .jobs{
     width: 20px;
     height: 50px;
     position: absolute;
-    
-    z-index: 999999;
+    z-index: 100;
 }
 .description{
-    font-size: 50px;
-    font: roboto;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
     /*color: silver;*/
+    position: fixed;
+    top: 350px;
+    left: 20px;
+    z-index:99999;
+    line-height: 0.5;
 }
 h1{
+
     font-size: inherit;
+    z-index:99999;
+
 }
 h2{
     font-size: inherit;
+    z-index:99999;
+}
+p{
+    z-index:99999;
 }
 body{
     background-color: #EDFFFC;
 }
 #job1{
     top:600px;
-    left:400px;
+    left:800px;
 }
 #job2{
     top:300px;
