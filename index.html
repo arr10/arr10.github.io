@@ -1,0 +1,71 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>Jymys</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <div class="map" id="here">
+      <div class="background"><img src="map.png" alt="Not loaded" onclick="addJob('a', 'b', 'c')"></div>
+      <a onclick="changetext('Оплата: 1000 тенге', 'Описание работы: Присмотреть за ребенком', 'Времени осталось: 1 час')">
+        <img src="task.png" alt="Task" class="jobs" id='job1'>
+      </a>
+      <a onclick="changetext('Оплата: 10000 тенге', 'Описание работы: починить трубу', 'Времени осталось: 1 день')" >
+        <img src="task.png" alt="Task" class="jobs" id='job2'>
+      </a>
+      <a onclick="changetext('Оплата: 500 тенге', 'Описание работы: помочь разгрузиться', 'Времени осталось: 10 минут')">
+        <img src="task.png" alt="Task" class="jobs" id='job3'>
+      </a>
+      <a href="http://dilken01.wp-tech01.gen.in/product/%d1%81%d1%82%d0%b5%d0%ba%d0%bb%d0%be-%d0%b8%d0%b7%d0%b3%d0%be%d1%82%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5/">
+        <img src="task.png" alt="Task" class="jobs" id='job4'>
+      </a>
+      <a href="http://dilken01.wp-tech01.gen.in/product/%d0%bf%d1%80%d0%be%d1%84%d0%b5%d1%81%d1%81%d0%b8%d0%be%d0%bd%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d1%81%d0%bb%d0%b5%d1%81%d0%b0%d1%80%d0%bd%d1%8b%d0%b5-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b/">
+        <img src="task.png" alt="Task" class="jobs" id='job5'>
+      </a>
+  </div>
+  <div class="description">
+    <h2 id="pay">Оплата:</h2>
+    <p id="job">Описание работы:</p>
+    <p id="time">Времени осталось:</p>
+    <p id="req">Требования к работнику: старше 18 лет</p>
+  </div>
+  <!-- <div class="createJob">
+    <p class="description">Опишите работу:</p>
+    <input type="text" class="description">
+    <p class="description">Оплата:</p>
+    <input type="text" class = description>
+    <p class="description">Время на выполнение:</p>
+    <input type="text" class = description>
+  </div> -->
+
+
+  <script>
+  function changetext(pay, job, time){
+    document.getElementById("pay").innerHTML = pay;
+    document.getElementById("job").innerHTML = job;
+    document.getElementById("time").innerHTML = time;
+  }
+  // var x = 0;
+  // var y = 0;
+  // function registerclick(event){
+  //   if(event.clientY < 1044){
+  //   y=event.clientY;
+  //   x=event.clientX;
+  //   }
+  // }
+  // function addJob(pay, job, time){
+  //   changetext(pay, job, time);
+  //   var newJob = document.createElement("a", "href='#'")
+    
+  //   newJob.style.position = "absolute";
+  //   newJob.style.height = "50px";
+  //   newJob.style.width = "20px";
+  //   newJob.style.top=y;
+  //   newJob.style.left=x;
+  //   newJob.innerHTML = "<img src='task.png' alt='Task' class='jobs'>";
+  //   document.body.appendChild(newJob);
+  // }
+  // document.addEventListener("click", registerclick)
+
+  </script>
+</body>
